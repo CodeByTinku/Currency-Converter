@@ -202,22 +202,7 @@ The production build will be in the `dist/` folder.
 
 ---
 
-## 📦 Deployment
 
-### Deploy to Vercel
-```bash
-npm install -g vercel
-vercel
-```
-
-### Deploy to Netlify
-1. Build the project: `npm run build`
-2. Drag and drop the `dist/` folder to [Netlify](https://app.netlify.com/drop)
-
-### Deploy to GitHub Pages
-Use [gh-pages](https://www.npmjs.com/package/gh-pages) package or GitHub Actions.
-
----
 
 ## 🤝 Contributing
 
