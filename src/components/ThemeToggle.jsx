@@ -10,19 +10,19 @@ export default function ThemeToggle() {
 
   // Apply theme to document
   useEffect(() => {
-    console.log('Current theme:', theme);
+    // console.log('Current theme:', theme);
     const root = document.documentElement;
     
     if (theme === 'dark') {
       root.classList.add('dark');
-      console.log('Dark class added to html element');
+      // console.log('Dark class added to html element');
     } else {
       root.classList.remove('dark');
-      console.log('Dark class removed from html element');
+      // console.log('Dark class removed from html element');
     }
     
     // Log the current classes
-    console.log('HTML classes:', root.className);
+    // console.log('HTML classes:', root.className);
   }, [theme]);
 
   const toggleTheme = () => {
@@ -38,14 +38,14 @@ export default function ThemeToggle() {
       <div className="relative w-6 h-6">
         <Sun
           className={`absolute inset-0 w-6 h-6 text-yellow-500 transition-all duration-300 ${
-            theme === 'light'
+            theme === 'dark'
               ? 'opacity-100 rotate-0'
               : 'opacity-0 rotate-90'
           }`}
         />
         <Moon
           className={`absolute inset-0 w-6 h-6 text-blue-500 transition-all duration-300 ${
-            theme === 'dark'
+            theme === 'light'
               ? 'opacity-100 rotate-0'
               : 'opacity-0 -rotate-90'
           }`}
