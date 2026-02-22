@@ -1,8 +1,7 @@
 @import 'tailwindcss';
 
-/* TailwindCSS v4 dark mode configuration */
-@variant dark (:where(.dark) &);
-@variant dark (:where(.dark &));
+/* TailwindCSS v4 dark mode configuration - class-based */
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Custom animations and styles */
 @keyframes fade-in {
